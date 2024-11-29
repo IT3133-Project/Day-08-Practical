@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/dash" element={<Dashboard/>} />
+          <Route path='/dash/*' element={<Dashboard/>} />
         </Routes>
       </Router>
     </div>
