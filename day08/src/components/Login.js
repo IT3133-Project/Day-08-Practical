@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import '../assets/css/login.css'
 
 export default function Login() {
 
@@ -27,7 +28,7 @@ export default function Login() {
 
 
     return (
-        <div>
+        <div className="login-container">
             <h1 align="center">Login Here</h1>
 
             <table>
@@ -47,7 +48,7 @@ export default function Login() {
                 </tbody>
             </table>
             <Button variant="primary" onClick={verifyLogin}>Login</Button>
-            {error && <div>{error}</div>}
+            {error && <div className="error">{error}</div>}
         </div>
     );
 }
