@@ -13,15 +13,15 @@ export default function Dashboard() {
 
                 <nav>
                     <ul>
-                        <li><Link to="/home">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="home">Home</Link></li>
+                        <li><Link to="about">About</Link></li>
+                        <li><Link to="contact">Contact</Link></li>
                     </ul>
                 </nav>
                 <Routes>
-                    <Route path="/home" element={<Home/>}> </Route>
-                    <Route path="/about" element={<AboutUs/>}> </Route>
-                    <Route path="/contact" element={<ContactUs/>}> </Route>
+                    <Route path="home" element={<Home/>}> </Route>
+                    <Route path="about" element={<AboutUs/>}> </Route>
+                    <Route path="contact" element={<ContactUs/>}> </Route>
                 </Routes>
 
 
